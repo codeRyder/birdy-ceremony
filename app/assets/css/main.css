@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+  --color-spiritual-connections-1: #6d8c7b;
+  --color-spiritual-connections-2: #f2e9bd;
+  --color-spiritual-connections-3: #965784;
+  --color-spiritual-connections-4: #d9b88f;
+  --color-spiritual-connections-5: #a68877;
+}
+
+:root {
+  --ui-primary: var( --color-spiritual-connections-1);
+  --ui-secondary: var( --color-spiritual-connections-3);
+}
+
+
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Font families */
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-sans {
+  font-family: 'Montserrat', sans-serif;
+}

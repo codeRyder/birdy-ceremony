@@ -1,0 +1,146 @@
+{
+  "event": {
+    "title": "Birdy & Birdy - in Verbundenheit frei",
+    "date": "26. September 2026",
+    "dateISO": "2026-09-26T00:00:00",
+    "startDate": "2026-09-25T15:00:00",
+    "endDate": "2026-09-27T14:00:00",
+    "location": {
+      "name": "Lindelbrunn",
+      "city": "Vorderweidenthal",
+      "short": "Lindelbrunn, Vorderweidenthal",
+      "full": "Lindelbrunn 1, 76889 Vorderweidenthal, Deutschland"
+    }
+  },
+  "seo": {
+    "title": "Birdy & Birdy – Eine freie Verbindungszeremonie am 26. September 2026",
+    "description": "Birdy & Birdy laden ein zu einem gemeinsamen Wochenende der Verbindung - frei gewählt, bewusst gelebt in Lindelbrunn, Vorderweidenthal. 25.-27. September 2026."
+  },
+  "hero": {
+    "title":"Birdy & Birdy",
+    "subtitlePre": "Zwei Flügel.",
+    "subtitle": "Kein Käfig. Ein gemeinsamer Flug.",
+    "date": "26. September 2026",
+    "location": "Lindelbrunn, Vorderweidenthal",
+    "backgroundImage": "/img/birdies.png",
+    "countdown": {
+      "labels": {
+        "days": "Tage",
+        "hours": "Std.",
+        "minutes": "Min.",
+        "seconds": "Sek."
+      }
+    }
+  },
+  "eventInfo": {
+    "heading": "Wir möchten mit euch feiern - Liebe, Freundschaft, Freiheit und das Leben",
+    "when": {
+      "title": "Wann",
+      "mainText": "<strong>Freitag, 25. September</strong> - Sonntag, 27. September 2026",
+      "subText": "Verbindungszeremonie am Samstag, 26. September"
+    },
+    "where": {
+      "title": "Wo",
+      "address": "Lindelbrunn 1<br>76889 Vorderweidenthal<br>Deutschland"
+    },
+    "celebration": {
+      "title": "Unser Wochenende",
+      "description": "Ein gemeinsames Wochenende, an dem wir unsere Verbindung, die Liebe und das Zusammensein mit Familie und Freunden feiern."
+    },
+	"accomodation": {
+      "title": "Übernachtung",
+      "description": "Eine Übernachtung ist direkt vor Ort möglich – im Haupthaus sowie in einfachen Blockhütten rund um das Gelände. Schlicht, naturnah und passend zum Charakter unseres gemeinsamen Wochenendes. Bitte gebt bei eurem Feedback an, ob ihr dieses Angebot voraussichtlich nutzen möchtet."
+    },
+    "guests": {
+      "title": "Gäste",
+      "description": "Ihr könnt gerne eure zweite Hälfte und auch Kinder mitbringen, es ist genügend Platz. Bitte teilt uns dies für unsere Planung in eurer Rückmeldung mit."
+    },
+    "schedule": {
+      "friday": {
+        "day": "Freitag",
+        "date": "25. September",
+        "description": "Vorbereitung und gemütliches Beisammensein im kleinen Helferkreis."
+      },
+      "saturday": {
+        "day": "Samstag",
+        "date": "26. September",
+        "description": "Birdy & Birdy - die Zeremonie"
+      },
+      "sunday": {
+        "day": "Sonntag",
+        "date": "27. September",
+        "description": "Entspannter Ausklang und Aufräumen auf freiwilliger Basis"
+      }
+    },
+    "alert": {
+      "title": "Weitere Details folgen in Kürze",
+      "description": "Wir teilen weitere Informationen über die Unterkunft, den genauen Zeitplan und andere Details, wenn der Termin näher rückt. Meldet euch unten an, um auf dem Laufenden zu bleiben!"
+    }
+  },
+  "rsvp": {
+    "heading": "Euer Feeback",
+    "subheading": "Bitte lasst uns wissen, ob ihr dieses besondere Wochenende mit uns feiern werdet.",
+    "form": {
+      "name": {
+        "label": "Euer Name",
+        "placeholder": "Gebt euren vollständigen Namen ein"
+      },
+      "email": {
+        "label": "E-Mail-Adresse",
+        "placeholder": "eure.email@beispiel.de"
+      },
+      "attendance": {
+        "label": "Werdet ihr teilnehmen?",
+        "options": [
+          {
+            "value": "attending",
+            "label": "✓ Ja, wir sind dabei!"
+          },
+          {
+            "value": "not-attending",
+            "label": "✗ Leider können wir nicht kommen"
+          },
+          {
+            "value": "dont-know",
+            "label": "? Noch nicht sicher"
+          }
+        ]
+      },
+      "additionalPeople": {
+        "label": "Weitere Gäste",
+        "help": "Wie viele weitere Personen kommen mit euch? (Maximum 4)",
+        "min": 0,
+        "max": 4
+      },
+      "guestNames": {
+        "label": "Namen der Gäste",
+        "help": "Bitte gebt die Namen eurer zusätzlichen Gäste an",
+        "placeholder": "Namen eingeben (einer pro Zeile)"
+      },
+      "stayTuned": {
+        "label": "Haltet mich über Veranstaltungsdetails und Neuigkeiten auf dem Laufenden"
+      },
+      "submit": {
+        "default": "Rückmeldung absenden",
+        "submitting": "Wird gesendet..."
+      },
+      "messages": {
+        "success": {
+          "title": "Vielen Dank für eure Rückmeldung!",
+          "description": "Eure Antwort ist bei uns eingetroffen und wir freuen uns darauf, mit euch ein buntes Fest zu feiern."
+        },
+        "error": {
+          "title": "Hoppla! Etwas ist schiefgelaufen",
+          "defaultDescription": "Rückmeldung konnte nicht gesendet werden. Bitte versucht es erneut."
+        }
+      }
+    },
+    "calendar": {
+      "text": "Speichert den Termin in eurem Kalender",
+      "buttonText": "Zum Kalender hinzufügen",
+      "subtitle": "Kompatibel mit allen Geräten und Kalender-Apps",
+      "eventTitle": "Die Vogelzeremonie",
+      "eventDescription": "Birdy & Birdy laden ein zu einem gemeinsamen Wochenende um unsere Verbindung zu feiern. Die Verbindungszeremonie findet am Samstag, 26. September 2026 statt."
+    }
+  }
+}

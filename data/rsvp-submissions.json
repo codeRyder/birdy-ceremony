@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Felix",
+    "email": "test@tes.de",
+    "attendance": "attending",
+    "additionalPeople": 1,
+    "guestNames": [
+      "MArkus"
+    ],
+    "stayTuned": true,
+    "id": "36cf92f2-694f-4fe4-9636-34fc522491bb",
+    "submittedAt": "2026-02-10T12:40:48.435Z"
+  },
+  {
+    "name": "felix",
+    "email": "asdas@sde.de",
+    "attendance": "attending",
+    "additionalPeople": 1,
+    "guestNames": [
+      "asdas"
+    ],
+    "stayTuned": true,
+    "id": "8e2417b7-dc40-4150-8086-0146ecc3f6be",
+    "submittedAt": "2026-02-10T12:45:22.390Z"
+  },
+  {
+    "name": "Felix",
+    "email": "asdsad@de.de",
+    "attendance": "attending",
+    "additionalPeople": 1,
+    "guestNames": [
+      "Max"
+    ],
+    "stayTuned": true,
+    "id": "4d2da646-a235-43e6-a86b-f18662b011bb",
+    "submittedAt": "2026-02-10T12:47:06.161Z"
+  }
+]

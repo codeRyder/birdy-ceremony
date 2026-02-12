@@ -1,0 +1,140 @@
+{
+  "event": {
+    "title": "Unsere Spirituelle Hochzeit",
+    "date": "26. September 2026",
+    "dateISO": "2026-09-26T00:00:00",
+    "startDate": "2026-09-25T15:00:00",
+    "endDate": "2026-09-27T14:00:00",
+    "location": {
+      "name": "Lindelbrunn",
+      "city": "Vorderweidenthal",
+      "short": "Lindelbrunn, Vorderweidenthal",
+      "full": "Lindelbrunn 1, 76889 Vorderweidenthal, Deutschland"
+    }
+  },
+  "seo": {
+    "title": "Unsere Spirituelle Hochzeit - 26. September 2026",
+    "description": "Feiert mit uns ein gesegnetes Wochenende unserer spirituellen Hochzeit in Lindelbrunn, Vorderweidenthal. 25.-27. September 2026."
+  },
+  "hero": {
+    "title": "Unsere Spirituelle<br>Hochzeit",
+    "date": "26. September 2026",
+    "location": "Lindelbrunn, Vorderweidenthal",
+    "backgroundImage": "/img/birdies.png",
+    "countdown": {
+      "labels": {
+        "days": "Tage",
+        "hours": "Std.",
+        "minutes": "Min.",
+        "seconds": "Sek."
+      }
+    }
+  },
+  "eventInfo": {
+    "heading": "Feiert Mit Uns Ein Ganzes Wochenende",
+    "when": {
+      "title": "Wann",
+      "mainText": "<strong>Freitag, 25. September</strong> - Sonntag, 27. September 2026",
+      "subText": "Hauptzeremonie am Samstag, 26. September"
+    },
+    "where": {
+      "title": "Wo",
+      "address": "Lindelbrunn 1<br>76889 Vorderweidenthal<br>Deutschland"
+    },
+    "celebration": {
+      "title": "Feier",
+      "description": "Ein gesegnetes Wochenende spiritueller Vereinigung, Liebe und Zusammensein mit Familie und Freunden."
+    },
+    "guests": {
+      "title": "Gäste",
+      "description": "Ihr könnt zusätzliche Gäste mitbringen (bis zu 4). Bitte teilt uns dies in eurer Rückmeldung mit."
+    },
+    "schedule": {
+      "friday": {
+        "day": "Freitag",
+        "date": "25. September",
+        "description": "Anreise & Willkommenstreffen"
+      },
+      "saturday": {
+        "day": "Samstag",
+        "date": "26. September",
+        "description": "Spirituelle Hochzeitszeremonie"
+      },
+      "sunday": {
+        "day": "Sonntag",
+        "date": "27. September",
+        "description": "Abschieds-Brunch"
+      }
+    },
+    "alert": {
+      "title": "Weitere Details folgen in Kürze",
+      "description": "Wir teilen weitere Informationen über Unterkünfte, Zeitplan und andere Details, wenn wir näher am Termin sind. Meldet euch unten an, um auf dem Laufenden zu bleiben!"
+    }
+  },
+  "rsvp": {
+    "heading": "Rückmeldung",
+    "subheading": "Bitte lasst uns wissen, ob ihr an dieser besonderen Feier teilnehmen könnt",
+    "form": {
+      "name": {
+        "label": "Euer Name",
+        "placeholder": "Gebt euren vollständigen Namen ein"
+      },
+      "email": {
+        "label": "E-Mail-Adresse",
+        "placeholder": "eure.email@beispiel.de"
+      },
+      "attendance": {
+        "label": "Werdet ihr teilnehmen?",
+        "options": [
+          {
+            "value": "attending",
+            "label": "✓ Ja, wir sind dabei!"
+          },
+          {
+            "value": "not-attending",
+            "label": "✗ Leider können wir nicht kommen"
+          },
+          {
+            "value": "dont-know",
+            "label": "? Noch nicht sicher"
+          }
+        ]
+      },
+      "additionalPeople": {
+        "label": "Weitere Gäste",
+        "help": "Wie viele weitere Personen kommen mit euch? (Maximum 4)",
+        "min": 0,
+        "max": 4
+      },
+      "guestNames": {
+        "label": "Namen der Gäste",
+        "help": "Bitte gebt die Namen eurer zusätzlichen Gäste an",
+        "placeholder": "Namen eingeben (einer pro Zeile)"
+      },
+      "stayTuned": {
+        "label": "Haltet mich über Veranstaltungsdetails und Neuigkeiten auf dem Laufenden"
+      },
+      "submit": {
+        "default": "Rückmeldung absenden",
+        "submitting": "Wird gesendet..."
+      },
+      "messages": {
+        "success": {
+          "title": "Vielen Dank für eure Rückmeldung!",
+          "description": "Wir haben eure Antwort erhalten und freuen uns darauf, mit euch zu feiern."
+        },
+        "error": {
+          "title": "Hoppla! Etwas ist schiefgelaufen",
+          "defaultDescription": "Rückmeldung konnte nicht gesendet werden. Bitte versucht es erneut."
+        }
+      }
+    },
+    "calendar": {
+      "text": "Speichert den Termin in eurem Kalender",
+      "buttonText": "Zum Kalender hinzufügen",
+      "subtitle": "Kompatibel mit allen Geräten und Kalender-Apps",
+      "eventTitle": "Spirituelle Hochzeitsfeier",
+      "eventDescription": "Feiert mit uns ein gesegnetes Wochenende unserer spirituellen Hochzeit. Die Hauptzeremonie findet am Samstag, 26. September 2026 statt."
+    }
+  }
+}

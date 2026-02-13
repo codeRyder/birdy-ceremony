@@ -14,7 +14,7 @@
 
       <!-- Form -->
       <UCard class="bg-neutral-50" >
-        <UForm :state="formState" @submit="handleSubmit" class="space-y-6">
+        <UForm :state="formState" @submit.prevent="handleSubmit" class="space-y-6">
           <!-- Name -->
           <UFormField :label="content.rsvp.form.name.label"  size="xl" name="name" required>
             <UInput
@@ -48,7 +48,7 @@
           </UFormField>
 
           <!-- Conditional: Additional People -->
-          <div v-if="formState.attendance === 'attending'" class="space-y-6 p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800">
+          <div v-if="formState.attendance && formState.attendance !== 'not-attending'" class="space-y-6 p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800">
             <UFormField 
               :label="content.rsvp.form.additionalPeople.label" 
               name="additionalPeople"
@@ -150,6 +150,17 @@
         </p>
         <CalendarDownload />
       </div>
+
+      <!-- Hidden Netlify Form for Detection -->
+      <form name="rsvp" method="POST" netlify hidden>
+        <input type="hidden" name="form-name" value="rsvp" />
+        <input type="text" name="name" :value="formState.name" />
+        <input type="email" name="email" :value="formState.email" />
+        <input type="text" name="attendance" :value="formState.attendance" />
+        <input type="number" name="additionalPeople" :value="formState.additionalPeople" />
+        <input type="text" name="guestNames" :value="formState.guestNames.join(', ')" />
+        <input type="checkbox" name="stayTuned" :checked="formState.stayTuned" />
+      </form>
     </div>
   </section>
 </template>
@@ -214,7 +225,7 @@ const handleSubmit = async () => {
         .map(name => name.trim())
         .filter(Boolean),
       stayTuned: formState.stayTuned,
-      "form-name": "rsvp" // For Netlify form handling
+      "form-name": "rsvp" // For Netlify form detection
     }
 
     //Create formdata from submissionData
@@ -231,7 +242,7 @@ const handleSubmit = async () => {
 
     await $fetch('/', {
       method: 'POST',
-      //@ts-expect-error - Netlify expects URL-encoded data, but FormData is easier to work with for arrays/objects. This is a workaround to convert it to the expected format.
+      //@ts-expect-error
       body: new URLSearchParams(formData).toString(),
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'

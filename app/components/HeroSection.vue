@@ -16,12 +16,12 @@
 
     <!-- Content -->
     <div
-      class="relative z-20 pt-20 md:mt-0 text-right px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto sm:ml-auto lg:mr-[8vw]"
+      class="relative z-20 pt-20 md:mt-0 text-right px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto sm:ml-auto lg:mr-[4vw]"
     >
       <div class="space-y-8 animate-fade-in">
         <!-- Title -->
         <h1
-          class="font-serif text-7xl md:text-9xl font-light text-white tracking-wide"
+          class="font-serif text-7xl md:text-9xl font-bold text-white tracking-wide"
           v-html="content.hero.title"
         />
         <h2 class="subtitle absolute w-full text-center md:text-right top-2 left-0 md:relative font-sans md:text-xl text-sm font-medium text-white/90">

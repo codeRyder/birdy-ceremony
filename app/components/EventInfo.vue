@@ -17,7 +17,7 @@
       <UCard class="mb-12">
         <div class="space-y-8">
           <!-- Event Details -->
-          <div class="grid md:grid-cols-2 gap-8">
+          <div class="grid md:grid-cols-2 gap-8 mb-0">
             <div class="space-y-4">
               <div class="flex items-start gap-3">
                 <Icon
@@ -85,20 +85,20 @@
                   </p>
                 </div>
               </div>
-              <div class="flex items-start gap-3">
-                <Icon
-                  name="i-heroicons-home"
-                  class="w-6 h-6 text-secondary mt-1 flex-shrink-0"
-                />
-                <div>
-                  <h3 class="font-semibold text-lg mb-1 font-sans">
-                    {{ content.eventInfo.accomodation.title }}
-                  </h3>
-                  <p class="text-neutral-600 dark:text-neutral-400">
-                    {{ content.eventInfo.accomodation.description }}
-                  </p>
-                </div>
-              </div>
+            </div>
+          </div>
+          <div class="w-100[%] flex mt-4 md:mt-0 items-start gap-3">
+            <Icon
+              name="i-heroicons-home"
+              class="w-6 h-6 text-secondary mt-1 flex-shrink-0"
+            />
+            <div>
+              <h3 class="font-semibold text-lg mb-1 font-sans">
+                {{ content.eventInfo.accomodation.title }}
+              </h3>
+              <p class="text-neutral-600 dark:text-neutral-400">
+                {{ content.eventInfo.accomodation.description }}
+              </p>
             </div>
           </div>
         </div>

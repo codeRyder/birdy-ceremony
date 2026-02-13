@@ -14,7 +14,7 @@
 
       <!-- Form -->
       <UCard class="bg-neutral-50" >
-        <UForm :state="formState" @submit="handleSubmit" class="space-y-6">
+        <UForm :state="formState" @submit="handleSubmit" class="space-y-6" netlify>
           <!-- Name -->
           <UFormField :label="content.rsvp.form.name.label"  size="xl" name="name" required>
             <UInput

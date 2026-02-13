@@ -14,7 +14,7 @@
 
       <!-- Form -->
       <UCard class="bg-neutral-50" >
-        <UForm :state="formState" class="space-y-6">
+        <UForm :state="formState" @submit="handleSubmit" class="space-y-6">
           <!-- Name -->
           <UFormField :label="content.rsvp.form.name.label"  size="xl" name="name" required>
             <UInput
@@ -48,7 +48,7 @@
           </UFormField>
 
           <!-- Conditional: Additional People -->
-          <div v-if="formState.attendance && formState.attendance !== 'not-attending'" class="space-y-6 p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800">
+          <div v-if="formState.attendance === 'attending'" class="space-y-6 p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-200 dark:border-neutral-800">
             <UFormField 
               :label="content.rsvp.form.additionalPeople.label" 
               name="additionalPeople"
@@ -143,16 +143,6 @@
         </UForm>
       </UCard>
 
-      <!-- Hidden Netlify Form -->
-      <form name="rsvp-submission" netlify hidden>
-        <input type="text" name="name" :value="formState.name" />
-        <input type="email" name="email" :value="formState.email" />
-        <input type="text" name="attendance" :value="formState.attendance" />
-        <input type="number" name="additionalPeople" :value="formState.additionalPeople" />
-        <input type="text" name="guestNames" :value="formState.guestNames.join(', ')" />
-        <input type="checkbox" name="stayTuned" :checked="formState.stayTuned" />
-      </form>
-
       <!-- Calendar Download -->
       <div class="mt-12 text-center">
         <p class="text-neutral-600 dark:text-neutral-400 mb-6">
@@ -223,7 +213,8 @@ const handleSubmit = async () => {
         .slice(0, formState.additionalPeople)
         .map(name => name.trim())
         .filter(Boolean),
-      stayTuned: formState.stayTuned
+      stayTuned: formState.stayTuned,
+      "form-name": "rsvp" // For Netlify form handling
     }
 
     //Create formdata from submissionData
@@ -240,8 +231,7 @@ const handleSubmit = async () => {
 
     await $fetch('/', {
       method: 'POST',
-      //@ts-expect-error
-      body: new URLSearchParams(formData).toString(),
+      body: new URLSearchParams(formData).toString()
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       }

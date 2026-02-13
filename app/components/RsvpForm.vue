@@ -150,7 +150,15 @@
         </p>
         <CalendarDownload />
       </div>
-
+      <form
+        netlify
+        action="/"
+        method="POST"
+        name="Contact"
+      >
+        <input type="hidden" name="form-name" value="Contact" />
+        <!-- ... -->
+      </form>
       <!-- Hidden Netlify Form for Detection -->
       <form netlify name="rsvp" method="POST"  action="/">
         <input type="hidden" name="form-name" value="rsvp" />

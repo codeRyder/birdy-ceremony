@@ -14,7 +14,7 @@
 
       <!-- Form -->
       <UCard class="bg-neutral-50" >
-        <UForm :state="formState" @submit="handleSubmit" class="space-y-6" netlify>
+        <UForm :state="formState" class="space-y-6" netlify>
           <!-- Name -->
           <UFormField :label="content.rsvp.form.name.label"  size="xl" name="name" required>
             <UInput
@@ -192,54 +192,69 @@ const isFormValid = computed(() => {
          formState.additionalPeople <= 4
 })
 
-const handleSubmit = async () => {
-  // Spam protection check
-  if (formState.honeypot) {
-    console.log('Spam detected')
-    return
-  }
+// const handleSubmit = async () => {
+//   // Spam protection check
+//   if (formState.honeypot) {
+//     console.log('Spam detected')
+//     return
+//   }
 
-  submitting.value = true
-  error.value = ''
-  submitted.value = false
+//   submitting.value = true
+//   error.value = ''
+//   submitted.value = false
 
-  try {
-    const submissionData = {
-      name: formState.name.trim(),
-      email: formState.email.trim(),
-      attendance: formState.attendance,
-      additionalPeople: formState.additionalPeople,
-      guestNames: formState.guestNames
-        .slice(0, formState.additionalPeople)
-        .map(name => name.trim())
-        .filter(Boolean),
-      stayTuned: formState.stayTuned
-    }
+//   try {
+//     const submissionData = {
+//       name: formState.name.trim(),
+//       email: formState.email.trim(),
+//       attendance: formState.attendance,
+//       additionalPeople: formState.additionalPeople,
+//       guestNames: formState.guestNames
+//         .slice(0, formState.additionalPeople)
+//         .map(name => name.trim())
+//         .filter(Boolean),
+//       stayTuned: formState.stayTuned
+//     }
 
-    await $fetch('/api/rsvp', {
-      method: 'POST',
-      body: submissionData
-    })
+//     //Create formdata from submissionData
+//     const formData = new FormData();
+//     Object.entries(submissionData).forEach(([key, value]) => {
+//       if (Array.isArray(value)) {
+//         value.forEach((item, index) => {
+//           formData.append(`${key}[${index}]`, item);
+//         });
+//       } else {
+//         formData.append(key, String(value));
+//       }
+//     });
 
-    submitted.value = true
+//     await $fetch('/', {
+//       method: 'POST',
+//       body: new URLSearchParams(formData).toString()
+//       headers: {
+//         'Content-Type': 'application/x-www-form-urlencoded'
+//       }
+//     })
+
+//     submitted.value = true
     
-    // Reset form after successful submission
-    setTimeout(() => {
-      formState.name = ''
-      formState.email = ''
-      formState.attendance = ''
-      formState.additionalPeople = 0
-      formState.guestNames = createEmptyGuestList()
-      formState.stayTuned = false
-    }, 3000)
-  } catch (err: any) {
-    const serverMessage = err?.data?.statusMessage || err?.statusMessage
-    error.value = serverMessage || err?.message || content.rsvp.form.messages.error.defaultDescription
-    console.error('Form submission error:', err)
-  } finally {
-    submitting.value = false
-  }
-}
+//     // Reset form after successful submission
+//     setTimeout(() => {
+//       formState.name = ''
+//       formState.email = ''
+//       formState.attendance = ''
+//       formState.additionalPeople = 0
+//       formState.guestNames = createEmptyGuestList()
+//       formState.stayTuned = false
+//     }, 3000)
+//   } catch (err: any) {
+//     const serverMessage = err?.data?.statusMessage || err?.statusMessage
+//     error.value = serverMessage || err?.message || content.rsvp.form.messages.error.defaultDescription
+//     console.error('Form submission error:', err)
+//   } finally {
+//     submitting.value = false
+//   }
+// }
 
 // Reset additional people when attendance changes
 watch(() => formState.attendance, (newValue) => {

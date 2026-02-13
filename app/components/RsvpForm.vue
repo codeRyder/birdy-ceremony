@@ -231,7 +231,8 @@ const handleSubmit = async () => {
 
     await $fetch('/', {
       method: 'POST',
-      body: new URLSearchParams(formData).toString()
+      //@ts-expect-error - Netlify expects URL-encoded data, but FormData is easier to work with for arrays/objects. This is a workaround to convert it to the expected format.
+      body: new URLSearchParams(formData).toString(),
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       }

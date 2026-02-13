@@ -152,7 +152,7 @@
       </div>
 
       <!-- Hidden Netlify Form for Detection -->
-      <form name="rsvp" method="POST" netlify hidden>
+      <form netlify name="rsvp" method="POST"  action="/">
         <input type="hidden" name="form-name" value="rsvp" />
         <input type="text" name="name" :value="formState.name" />
         <input type="email" name="email" :value="formState.email" />

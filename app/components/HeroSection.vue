@@ -1,6 +1,7 @@
 <template>
   <section
-    class="relative min-h-screen flex items-start md:items-center bg-primary justify-center overflow-hidden"
+    class="relative min-h-screen flex items-start md:items-center bg-primary  bg-no-repeat bg-cover justify-center overflow-hidden"
+     :style="{ backgroundImage: `url('${content.hero.backdrop}')`, backgroundPosition: 'right' }"
   >
     <!-- Background Video/Image -->
     <div class="absolute inset-0 z-0">

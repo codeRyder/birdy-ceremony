@@ -17,12 +17,13 @@
     "description": "Birdy & Birdy laden ein zu einem gemeinsamen Wochenende der Verbindung - frei gewählt, bewusst gelebt in Lindelbrunn, Vorderweidenthal. 25.-27. September 2026."
   },
   "hero": {
-    "title":"Birdy & Birdy",
+    "title": "Birdy & Birdy",
     "subtitlePre": "Zwei Flügel.",
     "subtitle": "Kein Käfig. Ein gemeinsamer Flug.",
     "date": "26. September 2026",
     "location": "Lindelbrunn, Vorderweidenthal",
     "backgroundImage": "/img/birdies.png",
+    "backdrop": "/img/lindelbrunn.jpg",
     "countdown": {
       "labels": {
         "days": "Tage",
@@ -47,7 +48,7 @@
       "title": "Unser Wochenende",
       "description": "Ein gemeinsames Wochenende, an dem wir unsere Verbindung, die Liebe und das Zusammensein mit Familie und Freunden feiern."
     },
-	"accomodation": {
+    "accomodation": {
       "title": "Übernachtung",
       "description": "Eine Übernachtung ist direkt vor Ort möglich – im Haupthaus sowie in einfachen Blockhütten rund um das Gelände. Schlicht, naturnah und passend zum Charakter unseres gemeinsamen Wochenendes. Bitte gebt bei eurem Feedback an, ob ihr dieses Angebot voraussichtlich nutzen möchtet."
     },
@@ -97,12 +98,12 @@
             "label": "✓ Ja, wir sind dabei!"
           },
           {
-            "value": "not-attending",
-            "label": "✗ Leider können wir nicht kommen"
-          },
-          {
             "value": "dont-know",
             "label": "? Noch nicht sicher"
+          },
+          {
+            "value": "not-attending",
+            "label": "✗ Leider können wir nicht kommen"
           }
         ]
       },

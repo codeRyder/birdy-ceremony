@@ -150,25 +150,6 @@
         </p>
         <CalendarDownload />
       </div>
-      <form
-        netlify
-        action="/"
-        method="POST"
-        name="Contact"
-      >
-        <input type="hidden" name="form-name" value="Contact" />
-        <!-- ... -->
-      </form>
-      <!-- Hidden Netlify Form for Detection -->
-      <form netlify name="rsvp" method="POST"  action="/">
-        <input type="hidden" name="form-name" value="rsvp" />
-        <input type="text" name="name" :value="formState.name" />
-        <input type="email" name="email" :value="formState.email" />
-        <input type="text" name="attendance" :value="formState.attendance" />
-        <input type="number" name="additionalPeople" :value="formState.additionalPeople" />
-        <input type="text" name="guestNames" :value="formState.guestNames.join(', ')" />
-        <input type="checkbox" name="stayTuned" :checked="formState.stayTuned" />
-      </form>
     </div>
   </section>
 </template>

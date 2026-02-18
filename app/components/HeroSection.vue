@@ -10,7 +10,7 @@
       />
       <!-- You can replace this with a video element -->
       <div
-        class="w-full h-full bg-bottom-left bg-no-repeat bg-fixed bg-contain"
+        class="w-full h-full bg-bottom-left bg-no-repeat bg-contain"
         :style="{ backgroundImage: `url('${content.hero.backgroundImage}')` }"
       />
     </div>

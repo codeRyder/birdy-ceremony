@@ -223,13 +223,7 @@ const handleSubmit = async () => {
     //Create formdata from submissionData
     const formData = new FormData();
     Object.entries(submissionData).forEach(([key, value]) => {
-      if (Array.isArray(value)) {
-        value.forEach((item, index) => {
-          formData.append(`${key}[${index}]`, item);
-        });
-      } else {
         formData.append(key, String(value));
-      }
     });
 
     await $fetch('/', {

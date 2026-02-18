@@ -65,12 +65,12 @@
       "saturday": {
         "day": "Samstag",
         "date": "26. September",
-        "description": "Birdy & Birdy - die Zeremonie"
+        "description": "Birdy & Birdy - die Zeremonie und das Fest der Verbindung mit euch allen."
       },
       "sunday": {
         "day": "Sonntag",
         "date": "27. September",
-        "description": "Entspannter Ausklang und Aufräumen auf freiwilliger Basis"
+        "description": "Entspannter Ausklang und Aufräumen auf freiwilliger Basis."
       }
     },
     "alert": {
@@ -83,19 +83,19 @@
     "subheading": "Bitte lasst uns wissen, ob ihr dieses besondere Wochenende mit uns feiern werdet.",
     "form": {
       "name": {
-        "label": "Euer Name",
-        "placeholder": "Gebt euren vollständigen Namen ein"
+        "label": "Name",
+        "placeholder": "Bsp: Lou Bega"
       },
       "email": {
         "label": "E-Mail-Adresse",
-        "placeholder": "eure.email@beispiel.de"
+        "placeholder": "Bsp: mambo@number5.de"
       },
       "attendance": {
-        "label": "Werdet ihr teilnehmen?",
+        "label": "Wirst du teilnehmen?",
         "options": [
           {
             "value": "attending",
-            "label": "✓ Ja, wir sind dabei!"
+            "label": "✓ Ja, ich bin dabei!"
           },
           {
             "value": "dont-know",
@@ -103,19 +103,19 @@
           },
           {
             "value": "not-attending",
-            "label": "✗ Leider können wir nicht kommen"
+            "label": "✗ Leider kann ich nicht kommen"
           }
         ]
       },
       "additionalPeople": {
         "label": "Weitere Gäste",
-        "help": "Wie viele weitere Personen kommen mit euch? (Maximum 4)",
+        "help": "Wie viele weitere Personen kommen mit dir? (Maximum 4)",
         "min": 0,
         "max": 4
       },
       "guestNames": {
         "label": "Namen der Gäste",
-        "help": "Bitte gebt die Namen eurer zusätzlichen Gäste an",
+        "help": "Bitte gebt die Namen deiner zusätzlichen Gäste an",
         "placeholder": "Namen eingeben (einer pro Zeile)"
       },
       "stayTuned": {
@@ -127,12 +127,12 @@
       },
       "messages": {
         "success": {
-          "title": "Vielen Dank für eure Rückmeldung!",
-          "description": "Eure Antwort ist bei uns eingetroffen und wir freuen uns darauf, mit euch ein buntes Fest zu feiern."
+          "title": "Vielen Dank für deine Rückmeldung!",
+          "description": "Deine Antwort ist bei uns eingetroffen und wir freuen uns darauf, mit euch ein buntes Fest zu feiern."
         },
         "error": {
           "title": "Hoppla! Etwas ist schiefgelaufen",
-          "defaultDescription": "Rückmeldung konnte nicht gesendet werden. Bitte versucht es erneut."
+          "defaultDescription": "Rückmeldung konnte nicht gesendet werden. Bitte versuche es erneut."
         }
       }
     },

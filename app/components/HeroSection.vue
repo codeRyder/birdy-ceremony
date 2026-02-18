@@ -22,10 +22,10 @@
       <div class="space-y-8 animate-fade-in">
         <!-- Title -->
         <h1
-          class="font-serif text-7xl md:text-9xl font-bold text-white tracking-wide"
+          class="font-serif text-6xl text-center md:text-right md:text-9xl font-bold text-white tracking-wide mb-4 md:mb-10"
           v-html="content.hero.title"
         />
-        <h2 class="subtitle absolute w-full text-center md:text-right top-2 left-0 md:relative font-sans md:text-xl text-sm font-medium text-white/90">
+        <h2 class="subtitle relative w-full text-center md:text-right font-sans md:text-xl text-sm font-medium text-white/90">
           <span>{{ content.hero.subtitlePre }}</span>
           {{ content.hero.subtitle }}
         </h2>

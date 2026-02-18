@@ -88,7 +88,7 @@
       },
       "email": {
         "label": "E-Mail-Adresse",
-        "placeholder": "Bsp: mambo@number5.de"
+        "placeholder": "Bsp: mambo@numberfive.de"
       },
       "attendance": {
         "label": "Wirst du teilnehmen?",
@@ -99,11 +99,11 @@
           },
           {
             "value": "dont-know",
-            "label": "? Noch nicht sicher"
+            "label": "? Noch nicht sicher."
           },
           {
             "value": "not-attending",
-            "label": "✗ Leider kann ich nicht kommen"
+            "label": "✗ Leider kann ich nicht kommen."
           }
         ]
       },
@@ -115,8 +115,8 @@
       },
       "guestNames": {
         "label": "Namen der Gäste",
-        "help": "Bitte gebt die Namen deiner zusätzlichen Gäste an",
-        "placeholder": "Namen eingeben (einer pro Zeile)"
+        "help": "Bitte gib die Namen deiner zusätzlichen Gäste an",
+        "placeholder": "Name"
       },
       "stayTuned": {
         "label": "Haltet mich über Veranstaltungsdetails und Neuigkeiten auf dem Laufenden"

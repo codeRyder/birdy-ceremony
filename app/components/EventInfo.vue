@@ -105,20 +105,7 @@
       </UCard>
 
       <!-- Schedule Preview -->
-      <div class="grid md:grid-cols-3 gap-6 mb-12">
-        <UCard>
-          <div class="text-center">
-            <div class="text-3xl font-serif mb-2">
-              {{ content.eventInfo.schedule.friday.day }}
-            </div>
-            <div class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">
-              {{ content.eventInfo.schedule.friday.date }}
-            </div>
-            <p class="text-neutral-600 dark:text-neutral-400">
-              {{ content.eventInfo.schedule.friday.description }}
-            </p>
-          </div>
-        </UCard>
+      <div class="grid md:grid-cols-2 gap-6 mb-12 ">
 
         <UCard class="ring-2 ring-secondary">
           <div class="text-center">

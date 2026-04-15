@@ -220,12 +220,20 @@ const handleSubmit = async () => {
       "form-name": "rsvp" // For Netlify form detection
     }
 
+    console.log(submissionData);
+    
     //Create formdata from submissionData
     const formData = new FormData();
     Object.entries(submissionData).forEach(([key, value]) => {
+      if (Array.isArray(value)) {
+        value.forEach((item, index) => {
+          formData.append(`${key}[${index}]`, item);
+        });
+      } else {
         formData.append(key, String(value));
-    });
-
+      }
+    });    
+    console.log('FormData entries:', Array.from(formData.entries()));
     await $fetch('/', {
       method: 'POST',
       //@ts-expect-error
